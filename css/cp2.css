@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 100px 1fr 2fr 60px;
+  grid-template-areas:
+    "header header header header"
+    "display display display display"
+    "quote-container quote-container quote-container quote-container"
+    "footer footer footer footer";
+}
+
+.page-header {
+  border: 1px solid black;
+  grid-area: header;
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  font-size: 3em;
+  text-align: center;
+}
+
+.display {
+  border: 1px solid black;
+  grid-area: display;
+  margin: 10px;
+  display: grid;
+}
+
+.display-quote {
+  font-size: 2em;
+  align-self: center;
+  justify-self: center;
+}
+
+.quote-container {
+  grid-area: quote-container;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 10px;
+}
+
+.quote-button {
+  border: 1px solid black;
+  display: grid;
+  font-size: 1.25em;
+  font-family: sans-serif;
+}
+
+.quote-button-link,
+.quote-button-link:visited {
+  color: black;
+  text-decoration: none;
+  margin: auto;
+}
+
+.footer {
+  border: 1px solid black;
+  grid-area: footer;
+  text-align: center;
+  line-height: 150%;
+  margin: 10px;
+}
+
+.footer-link, .footer-link:hover, .footer-link:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
