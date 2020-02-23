@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  border: 1px solid black;
   height: 100%;
   display: grid;
   grid-gap: 10px;
@@ -23,19 +22,18 @@ body {
 }
 
 .page-header {
-  border: 1px solid black;
   grid-area: header;
   margin: 10px;
   padding: 10px;
   display: grid;
   font-size: 3em;
-  text-align: center;
+  justify-self: center;
+  border: 3px solid grey;
 }
 
 .display {
-  border: 1px solid black;
   grid-area: display;
-  margin: 10px;
+  margin: 20px;
   display: grid;
   grid-template-rows: 2fr 1fr;
 }
@@ -57,18 +55,18 @@ body {
 .quote-container {
   grid-area: quote-container;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 25px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 10px;
+  margin: 20px;
 }
 
 .quote-button,
 .quote-button:visited,
 .quote-button:focus {
-  border: 1px solid black;
+  border: 2px solid grey;
   display: grid;
-  font-size: 1.25em;
+  font-size: 1.75em;
   font-family: sans-serif;
   background-color: transparent;
   outline: none;
@@ -79,11 +77,11 @@ body {
 }
 
 .footer {
-  border: 1px solid black;
+  border: 3px solid grey;
   grid-area: footer;
   text-align: center;
   line-height: 40px;
-  margin: 10px;
+  margin: 10px 20px 10px 20px;
 }
 
 .footer-link, .footer-link:hover, .footer-link:visited {
